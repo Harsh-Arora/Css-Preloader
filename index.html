@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Preloader</title>
+
+	<style type="text/css">
+		@keyframes spin{
+			0%{ 
+				transform: rotate(0deg);
+			}
+
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+
+		*{
+			padding: 0;
+			margin: 0;
+		}
+
+		body{
+			background: #ddd;
+			text-align: center;
+		}
+
+		.preloader{
+			display: block;
+			margin: 12.5% auto;
+			padding: 20px;
+		}
+
+		.circle1{
+			border-bottom: 4pt solid #023C40;
+			border-radius: 50%;
+			margin: 50px auto;
+			width: 150px;
+			height: 150px;
+			animation: spin linear 3s infinite;
+		}
+
+		.circle2{
+			border-top: 4pt solid orange;
+			border-radius: 50%;
+			width: 250px;
+			height: 250px;
+			animation: spin linear 2s infinite;
+			margin: 0 auto;
+		}
+
+
+
+	</style>
+
+</head>
+<body>
+
+	<div class="preloader">
+		<div class="circle2">
+			<div class="circle1"></div>
+		</div>
+	</div>
+
+</body>
+</html>
